@@ -1,15 +1,14 @@
-#include <SDL2/SDL_rect.h>
-#include <SDL2/SDL_render.h>
-#include <SDL2/SDL_stdinc.h>
-#include <SDL2/SDL_timer.h>
-#include <endian.h>
+#include <SDL_rect.h>
+#include <SDL_render.h>
+#include <SDL_stdinc.h>
+#include <SDL_timer.h>
 #include <stdio.h>
 #include <stdbool.h>
 #include <complex.h>
 #include <stdlib.h>
 #include <math.h>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_ttf.h>
+#include <SDL.h>
+#include <SDL_ttf.h>
 
 #define FONT_SIZE       24
 
@@ -98,7 +97,7 @@ int main()
 
     // Create textures for ticker labels
     TTF_Init();
-    font = TTF_OpenFont("/usr/share/fonts/gnu-free/FreeMono.ttf", FONT_SIZE);
+    font = TTF_OpenFont("/Users/joswinjohn/git/graphing-simulations/build/FreeMono.ttf", FONT_SIZE);
     if (!font) {
         printf("Couldn't find/init open ttf font.");
     }

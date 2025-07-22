@@ -14,3 +14,4 @@ clean:
 
 run: build_main && ./build/out
 
+.PHONY: clean run

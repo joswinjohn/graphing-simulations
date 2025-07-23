@@ -1,10 +1,9 @@
-# Cosine Graph Simulation
+# Graphing in SDL2
 
-Simulation of Quaternions using SDL2 in C
+Graph functions using SDL2 in C
 
 # Build From Source
 ```
 mkdir build
-make
-./build/out
+make && ./build/out
 ```

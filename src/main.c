@@ -45,12 +45,11 @@ double factor;
 Uint32 build_func(Uint32 m, void* n) {
     double x = -GRAPH_BOUND_X;
     for (int i = 0; i < GRAPH_WIDTH; i++) {
-        point_buffer[i] = (int)(FUNCTION * factor * (GRAPH_WIDTH / 2) / GRAPH_BOUND_Y);
+        point_buffer[i] = (int)(FUNCTION * factor * (GRAPH_WIDTH / 2.0) / GRAPH_BOUND_Y);
         x += (double) GRAPH_BOUND_X * 2 / GRAPH_WIDTH;
     }
-    factor += 0.1;
-    return 100;
-    printf("build cos!");
+    factor += 0.01;
+    return 10;
 }
 
 void create_text(int x, int y, const char* Message) {
